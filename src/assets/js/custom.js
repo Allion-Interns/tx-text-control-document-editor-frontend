@@ -1,7 +1,7 @@
 function saveDocument() {
     TXTextControl.saveDocument(TXTextControl.StreamType.HTMLFormat,
         function (e) {
-            console.log(e.data);
+            alert(atob(e.data));
         });
 }
 
